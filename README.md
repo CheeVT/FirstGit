@@ -1,3 +1,5 @@
+HI people!
+
 Hello world, this is my first text!
 
-How are you?
+Why do you work on friday?
