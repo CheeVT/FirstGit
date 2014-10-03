@@ -1,0 +1,22 @@
+<?php
+/**
+ * This file is part of NETFORMIC VS/4 Voucher Import module
+ * All rights reserved.
+ *
+ * @link      http://www.netformic.de
+ * @package   nfc_reviewname
+ * @copyright (C) NETFORMIC GmbH 2014
+ * @version 1.0.0
+ */
+
+// load oxid framework
+require_once '../bootstrap.php';
+
+$validActions	= array('vs4import');
+$action			= oxRegistry::getConfig()->getParameter('action');
+
+if(true === isset($action) && '' != $action && true === in_array($action, $validActions))
+{
+	$importExportAction = '';
+	switch($action)
+	{
